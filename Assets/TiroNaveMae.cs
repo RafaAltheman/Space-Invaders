@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class TiroInimigo : MonoBehaviour
+public class TiroNaveMae : MonoBehaviour
 {
-    public float speed = 6f;
+    public float speed = 7f;
 
     void Update()
     {

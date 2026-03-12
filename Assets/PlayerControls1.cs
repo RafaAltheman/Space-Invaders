@@ -5,7 +5,6 @@ public class PlayerControls1 : MonoBehaviour
     public BoxCollider2D leftWall;
     public BoxCollider2D rightWall;
     public float speed = 8f;
-
     public GameObject bulletPrefab;
 
     private Rigidbody2D rb;
@@ -21,6 +20,8 @@ public class PlayerControls1 : MonoBehaviour
 
     void Update()
     {
+        if (morreu) return;
+
         moveInput = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -31,6 +32,8 @@ public class PlayerControls1 : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (morreu) return;
+
         float minX = leftWall.bounds.max.x + halfWidth;
         float maxX = rightWall.bounds.min.x - halfWidth;
 
@@ -42,6 +45,8 @@ public class PlayerControls1 : MonoBehaviour
 
     void Shoot()
     {
+        if (bulletPrefab == null) return;
+
         Vector3 spawnPos = transform.position + new Vector3(0f, 0.8f, 0f);
         Instantiate(bulletPrefab, spawnPos, Quaternion.identity);
     }
@@ -51,21 +56,27 @@ public class PlayerControls1 : MonoBehaviour
         if (morreu) return;
         morreu = true;
 
-        GameManager.instance.PerderVida();
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.PerderVida();
+        }
+
         Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("TiroInimigo"))
+        if (other.CompareTag("TiroInimigo") || other.CompareTag("TiroNaveMae"))
         {
             Destroy(other.gameObject);
             Morrer();
+            return;
         }
 
         if (other.CompareTag("Inimigo"))
         {
             Morrer();
+            return;
         }
     }
 }

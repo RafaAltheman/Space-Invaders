@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text vidasTexto;
     public TMP_Text pontuacaoTexto;
 
+    private bool transicionandoDeCena = false;
+
     void Awake()
     {
         if (instance == null)
@@ -24,6 +26,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void Start()
@@ -31,8 +40,25 @@ public class GameManager : MonoBehaviour
         AtualizarUI();
     }
 
+    void Update()
+    {
+        VerificarVitoria();
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        transicionandoDeCena = false;
+
+        vidasTexto = GameObject.Find("VidasTexto")?.GetComponent<TMP_Text>();
+        pontuacaoTexto = GameObject.Find("PontosTexto")?.GetComponent<TMP_Text>();
+
+        AtualizarUI();
+    }
+
     public void PerderVida()
     {
+        if (transicionandoDeCena) return;
+
         vidas--;
 
         if (vidas < 0)
@@ -42,11 +68,12 @@ public class GameManager : MonoBehaviour
 
         if (vidas <= 0)
         {
-            Debug.Log("Game Over");
-            SceneManager.LoadScene("DefeatScene");
+            transicionandoDeCena = true;
+            SceneManager.LoadScene("History1");
         }
         else
         {
+            transicionandoDeCena = true;
             ReiniciarFase();
         }
     }
@@ -69,5 +96,24 @@ public class GameManager : MonoBehaviour
     public void ReiniciarFase()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void VerificarVitoria()
+    {
+        if (transicionandoDeCena) return;
+
+        string cenaAtual = SceneManager.GetActiveScene().name;
+
+        if (cenaAtual != "SampleScene")
+            return;
+
+        GameObject[] invaders = GameObject.FindGameObjectsWithTag("Inimigo");
+        GameObject naveMae = GameObject.FindGameObjectWithTag("NaveMae");
+
+        if (invaders.Length == 0 && naveMae == null)
+        {
+            transicionandoDeCena = true;
+            SceneManager.LoadScene("History");
+        }
     }
 }

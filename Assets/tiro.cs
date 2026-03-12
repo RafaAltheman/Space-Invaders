@@ -4,10 +4,11 @@ public class tiro : MonoBehaviour
 {
     public float speed = 10f;
     public int pontosPorInimigo = 10;
+    public int danoNaveMae = 1;
 
     void Update()
     {
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        transform.position += Vector3.up * speed * Time.deltaTime;
 
         if (transform.position.y > 10f)
         {
@@ -17,26 +18,24 @@ public class tiro : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Inimigo"))
+        if (!other.CompareTag("Inimigo"))
+            return;
+
+        NaveMae naveMae = other.GetComponent<NaveMae>();
+        if (naveMae != null)
+        {
+            naveMae.LevarDano(danoNaveMae);
+            Destroy(gameObject);
+            return;
+        }
+
+        invaders inimigo = other.GetComponent<invaders>();
+        if (inimigo != null)
         {
             GameManager.instance.AdicionarPontos(pontosPorInimigo);
-
-            invaders inimigo = other.GetComponent<invaders>();
-            if (inimigo != null)
-            {
-                invaders[] todos = FindObjectsOfType<invaders>();
-
-                foreach (invaders inv in todos)
-                {
-                    if (inv != null && inv != inimigo)
-                    {
-                        inv.AumentarVelocidade(0.1f);
-                    }
-                }
-            }
-
             Destroy(other.gameObject);
             Destroy(gameObject);
+            return;
         }
     }
 }

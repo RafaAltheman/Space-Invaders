@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &15980810
 BoxCollider2D:
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &66569974
 Rigidbody2D:
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &94082051
 Rigidbody2D:
@@ -754,6 +754,8 @@ MonoBehaviour:
   enemyBulletPrefab: {fileID: 853361320542799035, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
   shootInterval: 3
   maxEnemyBulletsOnScreen: 2
+  player: {fileID: 1998433900}
+  cenaVitoria: History
 --- !u!4 &140817008
 Transform:
   m_ObjectHideFlags: 0
@@ -839,7 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &283294710
 BoxCollider2D:
@@ -1179,7 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &467672602
 BoxCollider2D:
@@ -1380,7 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &506120183
 BoxCollider2D:
@@ -1802,7 +1804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &628730369
 BoxCollider2D:
@@ -2003,7 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &645154154
 Rigidbody2D:
@@ -2204,7 +2206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &694674316
 Rigidbody2D:
@@ -2405,7 +2407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &785141683
 BoxCollider2D:
@@ -2606,7 +2608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &815369028
 Rigidbody2D:
@@ -2899,7 +2901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &847141129
 BoxCollider2D:
@@ -3008,7 +3010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &910312660
 BoxCollider2D:
@@ -3209,7 +3211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &920799578
 BoxCollider2D:
@@ -3410,7 +3412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1021377520
 BoxCollider2D:
@@ -3689,7 +3691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1080393610
 Rigidbody2D:
@@ -3890,7 +3892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1085896956
 Rigidbody2D:
@@ -4091,7 +4093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1101962404
 BoxCollider2D:
@@ -4427,7 +4429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1178523214
 Rigidbody2D:
@@ -4628,7 +4630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1296333593
 BoxCollider2D:
@@ -4795,6 +4797,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 140817008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1318969094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+  m_PrefabInstance: {fileID: 8702478807440721838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1421772503
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,7 +4836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1421772505
 BoxCollider2D:
@@ -5030,7 +5037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1462825337
 BoxCollider2D:
@@ -5334,7 +5341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1531541779
 Rigidbody2D:
@@ -5535,7 +5542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1533983269
 BoxCollider2D:
@@ -5814,7 +5821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1546771744
 Rigidbody2D:
@@ -6015,7 +6022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1624097135
 Rigidbody2D:
@@ -6216,7 +6223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1642294157
 Rigidbody2D:
@@ -6417,7 +6424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1696768473
 BoxCollider2D:
@@ -6618,7 +6625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1770308283
 BoxCollider2D:
@@ -6819,7 +6826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1788256743
 Rigidbody2D:
@@ -7020,7 +7027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1879398937
 Rigidbody2D:
@@ -7254,7 +7261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1964134256
 BoxCollider2D:
@@ -7455,7 +7462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &1967632766
 Rigidbody2D:
@@ -7656,7 +7663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &1977122811
 BoxCollider2D:
@@ -8115,7 +8122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!50 &2072448056
 Rigidbody2D:
@@ -8419,6 +8426,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106106217}
   m_CullTransparentMesh: 1
+--- !u!1 &2112403785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551608904456332564, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
+  m_PrefabInstance: {fileID: 1166705063990586278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2112403790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
+  m_PrefabInstance: {fileID: 1166705063990586278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118071582
 GameObject:
   m_ObjectHideFlags: 0
@@ -8453,7 +8470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
-  speed: 2
+  speed: 0.5
   dropAmount: 0.5
 --- !u!61 &2118071584
 BoxCollider2D:
@@ -8620,67 +8637,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 140817008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &31936489324422577
+--- !u!1001 &1166705063990586278
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1318969094}
     m_Modifications:
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 4551608904456332564, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
+      propertyPath: m_Name
+      value: TiroNaveMae
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.91368854
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3269039
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7170408
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 236766996480795681, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: 8464631173893341158, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 853361320542799035, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
-      propertyPath: m_Name
-      value: TiroInimigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 853361320542799035, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
-      propertyPath: m_TagString
-      value: TiroInimigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9ab0f52a5f32a3ce3a526141bb6f2487, type: 3}
 --- !u!212 &1415458192991325017
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8750,6 +8763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   pontosPorInimigo: 10
+  danoNaveMae: 1
 --- !u!1 &2119767235849169929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8806,6 +8820,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8702478807440721838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: pontoTiro
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: vidaMaxima
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: shootInterval
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: enemyBulletPrefab
+      value: 
+      objectReference: {fileID: 853361320542799035, guid: 0b82d980ca34aac009f29ab472d7f853, type: 3}
+    - target: {fileID: -8048613876238190046, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: tiroNaveMaePrefab
+      value: 
+      objectReference: {fileID: 2112403785}
+    - target: {fileID: 250185705625507931, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_Name
+      value: NaveMae
+      objectReference: {fileID: 0}
+    - target: {fileID: 250185705625507931, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_TagString
+      value: NaveMae
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.91368854
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3269039
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7170408
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 933457239526431662, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2112403790}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d8b8401a41d0733da858e635a4abede, type: 3}
 --- !u!1001 &9151857432785299991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8873,8 +8975,8 @@ SceneRoots:
   - {fileID: 9151857432785299991}
   - {fileID: 1162869272}
   - {fileID: 1892894595}
-  - {fileID: 31936489324422577}
   - {fileID: 140817008}
   - {fileID: 1105473322}
   - {fileID: 1524988661}
   - {fileID: 1981368628}
+  - {fileID: 8702478807440721838}

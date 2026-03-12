@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Inimigo
   - TiroInimigo
+  - NaveMae
+  - TiroNaveMae
   layers:
   - Default
   - TransparentFX
